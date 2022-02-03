@@ -23,7 +23,14 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        rotateSwitches()
         updateUI()
+    }
+    
+    func rotateSwitches() {
+        for `switch` in switches {
+            `switch`.layer.transform = CATransform3DMakeRotation(-.pi/2, 0, 0, 1)
+        }
     }
     
     /// Show actual value of modelNumber on all controls.
