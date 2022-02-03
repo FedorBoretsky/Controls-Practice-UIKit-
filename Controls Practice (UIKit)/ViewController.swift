@@ -33,11 +33,21 @@ class ViewController: UIViewController {
         }
     }
     
+    // MARK: - Update interface
+    
     /// Show actual value of modelNumber on all controls.
     func updateUI() {
         button.setTitle("\(modelNumber)", for: [])
         textField.text = "\(modelNumber)"
         slider.value = Float(modelNumber)
+        updateSwitches()
+    }
+    
+    /// Show actual value of modelNumber on switches
+    func updateSwitches() {
+        for `switch` in switches {
+            `switch`.isOn = (`switch`.tag & modelNumber) > 0
+        }
     }
     
     // MARK: - React to control's activity.
@@ -63,7 +73,7 @@ class ViewController: UIViewController {
     @IBAction func switched() {
         var switchResult = 0
         for singleSwitch in switches {
-            switchResult += singleSwitch.tag * (singleSwitch.isOn ? 1 : 0)
+            switchResult += singleSwitch.isOn ? singleSwitch.tag : 0
         }
         modelNumber = switchResult
     }
