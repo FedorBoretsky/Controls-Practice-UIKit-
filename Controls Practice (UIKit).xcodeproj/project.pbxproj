@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		9F23889D27AD088200C4D6C9 /* Screenshot-01.png in Resources */ = {isa = PBXBuildFile; fileRef = 9F23889C27AD088200C4D6C9 /* Screenshot-01.png */; };
+		9F507B6227AD09A400571202 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 9F507B6127AD09A300571202 /* README.md */; };
 		9F62BAF727AAFF9100EF0EE7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F62BAF627AAFF9100EF0EE7 /* AppDelegate.swift */; };
 		9F62BAF927AAFF9100EF0EE7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F62BAF827AAFF9100EF0EE7 /* SceneDelegate.swift */; };
 		9F62BAFB27AAFF9100EF0EE7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F62BAFA27AAFF9100EF0EE7 /* ViewController.swift */; };
@@ -18,6 +19,7 @@
 
 /* Begin PBXFileReference section */
 		9F23889C27AD088200C4D6C9 /* Screenshot-01.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Screenshot-01.png"; sourceTree = "<group>"; };
+		9F507B6127AD09A300571202 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = SOURCE_ROOT; };
 		9F62BAF327AAFF9100EF0EE7 /* Controls Practice (UIKit).app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Controls Practice (UIKit).app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9F62BAF627AAFF9100EF0EE7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9F62BAF827AAFF9100EF0EE7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -66,6 +68,7 @@
 		9F62BAF527AAFF9100EF0EE7 /* Controls Practice (UIKit) */ = {
 			isa = PBXGroup;
 			children = (
+				9F507B6127AD09A300571202 /* README.md */,
 				9F23889B27AD07D000C4D6C9 /* Screenshots */,
 				9F62BAF627AAFF9100EF0EE7 /* AppDelegate.swift */,
 				9F62BAF827AAFF9100EF0EE7 /* SceneDelegate.swift */,
@@ -138,6 +141,7 @@
 			files = (
 				9F23889D27AD088200C4D6C9 /* Screenshot-01.png in Resources */,
 				9F62BB0327AAFF9200EF0EE7 /* LaunchScreen.storyboard in Resources */,
+				9F507B6227AD09A400571202 /* README.md in Resources */,
 				9F62BB0027AAFF9200EF0EE7 /* Assets.xcassets in Resources */,
 				9F62BAFE27AAFF9100EF0EE7 /* Main.storyboard in Resources */,
 			);
