@@ -14,9 +14,11 @@ class ViewController: UIViewController {
     @IBOutlet weak var slider: UISlider!
     @IBOutlet var switches: [UISwitch]!
     
+    let maxValue = 256
+    
     var modelNumber = 24 {
         didSet {
-            modelNumber %= 256  // Values is in range 0...255
+            modelNumber = (modelNumber + maxValue) % maxValue  // Values is in range 0...255
             updateUI()
         }
     }
@@ -76,6 +78,11 @@ class ViewController: UIViewController {
             switchResult += singleSwitch.isOn ? singleSwitch.tag : 0
         }
         modelNumber = switchResult
+    }
+    
+    @IBAction func screenTapped(_ sender: UITapGestureRecognizer) {        
+        let tapPoint = sender.location(in: view)
+        modelNumber += (tapPoint.x < view.bounds.midX) ? -1 : +1
     }
     
 }
